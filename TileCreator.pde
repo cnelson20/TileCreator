@@ -105,9 +105,9 @@ void keyPressed() {
    } else if (keyCode == 38) { // Up arrow
      if (cursory > 0) {cursory--;}
    } else if (keyCode == 39) { // Right arrow
-     if (cursorx < size) {cursorx++;}
+     if (cursorx < size - 1) {cursorx++;}
    } else if (keyCode == 40) { // down arrow
-     if (cursory < size) {cursory++;}
+     if (cursory < size - 1) {cursory++;}
    } else if (keyCode >= 0x30 && keyCode <= 0x39) {
      tile[cursory][cursorx] = keyCode - 0x30;  
    } else if (keyCode >= 0x70 && keyCode <= 0x76) {
